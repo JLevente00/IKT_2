@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="botstrap_modified.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Aranybogrács</title>
+    <link rel="icon" type="image/x-icon" href="./food.jpg">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Aranybogrács</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">Rólunk</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menü</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#app">App</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#subscribe">Felíratkozás</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Kedvenc étel?">
+                </form>
+              </div>
+            </div>
+          </nav>
+        <div class="body">
+            <span>Üdvözlünk az</span>
+            <h1>Aranybográcsban</h1>
+              
+        </div>
+    </div>
+    <div class="discover" id="about">
+        <div style="text-align:center; margin:40px;">
+            <a href="kapcs.html">
+        <button id="finalizeBtn">Kapcsolatba lépés</button>
+            </a>
+</div>  
+      <h2>A <span class="text-danger">mi </span> szolgálatatásunk!</h2>
+        <p>Eredeti magyar ételek megfelező fűszerezzéssel ezek elkészítése és házhozszállítása!</p>
+        <img src="food.jpg" alt="Food">
+    </div>
+    <div class="divider"></div>
+    <div class="topdishes" id="menu">
+        <h2>Kínálatunk</h2>
+        <div class="row card-dishes">
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow"><img class="card-img-top" src="./Slambuc.jpg" alt="Food Name">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Slambuc</h3>
+                    <button class="btn-white" onclick="etelMegnyit('Slambuc', 2500)">Rendelés</button>
+                </div></a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" ><img class="card-img-top" src="./bableves.jpg" alt="Food Name">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Csülkös bableves</h3>
+                   <button class="btn-white" onclick="etelMegnyit('Csülkös bableves', 1800)">Rendelés</button>
+                </div></a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" ><img class="card-img-top" src="./lecsó.jpg" alt="Food Name">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Lecsó</h3>
+                   <button class="btn-white" onclick="etelMegnyit('Lecsó', 1500)">Rendelés</button>
+                </div></a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" ><img class="card-img-top" src="./Tarhonyás hús.jpg" alt="Food Name">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Tarhonyás hús</h3>
+                   <button class="btn-white" onclick="etelMegnyit('Tarhonyás hús', 2300)">Rendelés</button>
+                </div></a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow"><img class="card-img-top" src="./Kakas pörkölt.jpg" alt="Food Name">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Kakas pörkölt</h3>
+                   <button class="btn-white" onclick="etelMegnyit('Kakas pörkölt', 3500)">Rendelés</button>
+                </div></a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" ><img class="card-img-top" src="./Vaddisznópörkölt.jpg" alt="Food Name">
+                <div class="card-body py-4 text-center">
+                  <h3 class="h5 mt-1">Vaddisznópörkölt</h3>
+                   <button class="btn-white" onclick="etelMegnyit('Vaddisznópörkölt', 3500)">Rendelés</button>
+                </div></a></div>
+              <button id="finalizeBtn" onclick="kosarVeglegesit()">Véglegesítés</button>
+          </div>
+    </div>
+    <div class="divider"></div>
+    <div class="app" id="app">
+        <div class="left">
+            <h2>Feliratkozás a hírlevelünkre <br> Aranybogrács App</h2>
+            <p>Íratkozz fel hírlevelünkre, hogy értesülj kedvezményeinkről és támogass minket!</p>
+            <img src="store.png" alt="download" class="downloadImg">
+        </div>
+        <img src="letöltés-removebg-preview.png" alt="app" class="appImg">
+    </div>
+    <div class="subscribe" id="subscribe">
+        <h2>Íratkozz <span class="text-danger">fel </span>hírlevelünkre</h2>
+        <div class="form">
+            <div class="input-group mb-3 newsletterForm">
+                <form onsubmit="return feliratkozas()">
+                  <div class="input-group mb-3 newsletterForm">
+                  <input type="email" class="form-control" placeholder="Írd be az emailedet!" required>
+                  <button type="submit" class="input-group-text btn btn-danger">Subscribe</button>
+    </div>
+</form>
+
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="footer">
+        <footer>
+            © 2026 Aranybogrács
+        </footer>
+                </div>
+                    <div id="etelModal" class="modal" style="display:none;">
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                      <div id="modalContent">
+                  </div>
+              </div>
+            </div>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

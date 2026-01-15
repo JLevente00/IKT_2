@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aranybogrács</title>
+    <link rel="stylesheet" href="botstrap_modified.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+     <link rel="icon" type="image/x-icon" href="./food.jpg">
+</head>
+<body>
+
+
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Aranybogrács</a>
+        </div>
+    </nav>
+
+    <div class="body">
+        <h1>Lépj    <span>velünk</span>  kapcsolatba</h1>
+    </div>
+</div>
+
+
+<section class="contact">
+    <h2>Írj nekünk</h2>
+    <p>Foglalás, kérdés vagy vélemény? Vedd fel velünk a kapcsolatot!</p>
+
+    <div class="contact-wrapper">
+        <form class="contact-form">
+            <input type="text" placeholder="Teljes név" required>
+            <input type="email" placeholder="Email cím" required>
+            <textarea placeholder="Üzenet" rows="5"></textarea>
+
+            <button onclick="uzenetElkuldve()" id="finalizeBtn">Üzenet küldése</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Elérhetőség</h3>
+            <p>📍 Debrecen, Széchenyi utca 12.</p>
+            <p>📞 +36 30 123 4567</p>
+            <p>📧 info@aranybogracs.hu</p>
+        </div>
+    </div>
+</section>
+
+
+<div style="text-align:center; margin:50px;">
+    <a href="index.html">
+        <button class="btn-white">← Vissza a főoldalra</button>
+    </a>
+</div>
+
+
+<div class="footer">
+    <footer>
+        © 2026 Aranybogrács
+    </footer>
+</div>
+
+<script>
+function uzenetElkuldve(){
+    alert("Üzenet elküldve! Hamarosan felvesszük veled a kapcsolatot.");
+    return false;
+}
+</script>
+</body>
+</html>
+
